@@ -219,6 +219,9 @@ a{
         display: grid;
         grid-template-columns: 1fr;
     }
+    .box{
+        width: 95%;
+    }
     .item-price{
         margin-top: 5px;
         background-color: white;
