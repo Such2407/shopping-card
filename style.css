@@ -1,0 +1,235 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: rgb(88, 87, 87);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.cancel >a{
+    color:white;
+}
+.nav{
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px 20px 60px;
+    font-size: 20px;
+
+}
+.logo{
+    font-weight: bold;
+    font-size: 40px;
+}
+.cartIcon{
+    cursor: pointer;
+}
+.cart-menu{
+    position: relative;
+}
+.cart-info{
+    cursor: pointer;
+}
+.cart{
+    position: absolute;
+    min-height: 10rem;
+    background: blanchedalmond;
+    top: 0;
+    right: 0;
+    transition: all 1s ease-in-out;    
+    width: 0;
+    z-index: 1;
+    overflow: hidden ;
+}
+.show-cart{
+    width: 15rem;
+    padding: 2rem 1.rem;
+    transform: rotateY(-360deg);
+}
+.item-name,.item-price{
+    font-weight: bold;
+    width: 45%;
+}
+.cart-item-name{
+    color: rgba(214, 15, 15, 0.71);
+}
+.cnt{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box{
+    width: 80%;
+    margin: 40px auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row2{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row2 >div{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.credit{
+    color: red;
+}
+.send{
+    width: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+    background-color: white;
+    padding: 5px;
+    display: none;
+    
+}
+.add-pay{
+    display: block;
+}
+.payment-method{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+.transfer, .cash{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col2{
+    margin: 0px 10px;
+    width: 33.3%;
+}
+.col-4{
+    width: 31%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.cart-bg{
+    background-color: white;
+    margin-top: 10px;
+}
+.total{
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.inner-cart-icon{
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+    transition: .5s;
+    opacity: 0;
+}
+.col-img{
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+.col-4:hover .inner-cart-icon{
+    opacity: 1;
+}
+.col-4:hover .col-img{
+    transform: scale(1.05);
+}
+.cart-tex{
+    width: 100%;
+    padding: 20px;
+    border-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.item-price{
+    background-color: white;
+    padding: 8px;
+    border-radius: 30px;
+}
+.cartIcon{
+    width: 20px;
+}
+.box2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.cancel{
+    left: 10px;
+    top: 3%;
+    z-index: 100;
+    position: absolute;
+    border: 1px solid green;
+    background-color: green;
+    font-weight: bold;
+    padding:5px 10px;
+    border-radius: 3px;
+    font-size: 10px;
+    
+}
+.payment-img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.py{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:650px) {
+    .cart-tex{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .item-price{
+        margin-top: 5px;
+        background-color: white;
+        width: 90%;
+        border-radius: 30px;
+    }
+    .inner-cart-icon{
+        width: 50%;
+        bottom: 40%;
+    }
+    .payment-img{
+        width: 70%;
+    }
+}
