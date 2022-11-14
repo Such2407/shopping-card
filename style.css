@@ -222,6 +222,10 @@ a{
     .box{
         width: 95%;
     }
+    .nav{
+        padding: 15px;
+        font-size: 15px;
+    }
     .item-price{
         margin-top: 5px;
         background-color: white;
