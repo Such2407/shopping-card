@@ -46,7 +46,7 @@ const mainAmount = document.querySelector(".main-amount");
                         <div class="price">${item.itemPrice}</div>
                     </div>
                     <div class="col2">
-                    <img src="/pictures/icons8-trash-50.png" class="cartIcon delete" alt="">
+                    <img src="pictures/icons8-trash-50.png" class="cartIcon delete" alt="">
                     </div>`;
                     const cart = document.querySelector(".cart");
                     const total = document.querySelector(".total");
